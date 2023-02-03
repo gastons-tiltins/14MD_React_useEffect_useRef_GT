@@ -5,9 +5,9 @@ import {TaskTwo} from './components/TaskTwo';
 import {TaskThree} from './components/TaskThree';
 import {TaskFour} from './components/TaskFour';
 import {TaskFive} from './components/TaskFive';
-import {TaskSix} from './components/TaskSix___';
+import {TaskSix} from './components/TaskEight';
 import {TaskSeven} from './components/TaskSeven';
-// import {TaskEight} from './components/TaskSix';
+import {TaskEight} from './components/TaskEight';
 
 function App() {
     return (
@@ -24,8 +24,8 @@ function App() {
             {/* Font change, title change */}
             {/* <TaskFive /> */}
             {/* <TaskSix /> */}
-            <TaskSeven />
-            {/* <TaskEight /> */}
+            {/* <TaskSeven /> */}
+            <TaskEight />
         </>
     );
 }

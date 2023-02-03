@@ -113,6 +113,15 @@ select {
     gap: 10px;
 }
 
+.task7 {
+    margin: 10px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 .task6 {
     margin: 10px 0px;
     display: flex;
@@ -122,6 +131,9 @@ select {
 }
 
 .div-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80px;
     height: 80px;
     border: 1px solid black;
@@ -144,4 +156,14 @@ select {
 
 p::after {
     content: ' - Remember this';
+}
+
+.div-box8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    background-color: gold;
 }
