@@ -5,7 +5,7 @@ import {TaskTwo} from './components/TaskTwo';
 import {TaskThree} from './components/TaskThree';
 import {TaskFour} from './components/TaskFour';
 import {TaskFive} from './components/TaskFive';
-import {TaskSix} from './components/TaskEight';
+import {TaskSix} from './components/TaskSix';
 import {TaskSeven} from './components/TaskSeven';
 import {TaskEight} from './components/TaskEight';
 
@@ -14,17 +14,20 @@ function App() {
         <>
             <h1>MD14 React GT</h1>
             {/* Submit form, add values to Array */}
-            {/* <TaskOne /> */}
+            <TaskOne />
             {/* Disabled button, after that increase count  */}
-            {/* <TaskTwo /> */}
+            <TaskTwo />
             {/* Color drop down select */}
-            {/* <TaskThree /> */}
+            <TaskThree />
             {/* Count and text as type */}
-            {/* <TaskFour /> */}
+            <TaskFour />
             {/* Font change, title change */}
-            {/* <TaskFive /> */}
-            {/* <TaskSix /> */}
-            {/* <TaskSeven /> */}
+            <TaskFive />
+            {/* Change BG color.. */}
+            <TaskSix />
+            {/* Impossible div clone.. */}
+            <TaskSeven />
+            {/* Move to top right corner */}
             <TaskEight />
         </>
     );

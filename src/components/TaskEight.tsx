@@ -1,4 +1,4 @@
-import {useRef} from 'react';
+import {useRef, useEffect} from 'react';
 export const TaskEight = () => {
     let ref: any = useRef();
 
@@ -10,6 +10,7 @@ export const TaskEight = () => {
             boxElement.style.top = '0px';
             boxElement.style.right = '0px';
         }
+        window.scrollTo(0, 0);
     };
 
     return (

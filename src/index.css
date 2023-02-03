@@ -154,10 +154,6 @@ select {
     border: 1px solid black;
 }
 
-p::after {
-    content: ' - Remember this';
-}
-
 .div-box8 {
     display: flex;
     justify-content: center;

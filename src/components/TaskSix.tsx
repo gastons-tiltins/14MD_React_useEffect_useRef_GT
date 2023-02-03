@@ -9,7 +9,9 @@ export const TaskSix = () => {
     return (
         <div>
             <h2>Task 6</h2>
-            <div className='div-box' ref={box} />
+            <div className='div-boxes'>
+                <div className='div-box' ref={box} />
+            </div>
             <button onClick={onClick}>Change color</button>
         </div>
     );
