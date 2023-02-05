@@ -3,7 +3,6 @@ import {useEffect, useState} from 'react';
 export const TaskThree = () => {
     const [colorValue, setColorValue] = useState('silver');
     const [div, setDiv] = useState<any>([]);
-    const [showButton, setShowButton] = useState(true);
 
     const handleClick = () => {
         console.log(colorValue);
@@ -15,20 +14,17 @@ export const TaskThree = () => {
         setColorValue(e.target.value);
     };
 
-    useEffect(() => {
-        const timer = setTimeout(() => setShowButton(false), 5000);
-    }, []);
-
     return (
         <div>
             <h2>Task 3</h2>
             <div className='button-select'>
-                <button onClick={handleClick} disabled={showButton}>
-                    +
-                </button>
+                <button onClick={handleClick}>+</button>
                 <form>
-                    <select onChange={handleChange}>
+                    <select defaultValue={'DEFAULT'} onChange={handleChange}>
                         {/* COLOR DROPDWON */}
+                        <option value='DEFAULT' disabled>
+                            COLOR DROPDOWN
+                        </option>
                         <option value='silver'>Silver</option>
                         <option value='cadetblue'>Cadetblue</option>
                         <option value='darkkhaki'>Darkkhaki</option>

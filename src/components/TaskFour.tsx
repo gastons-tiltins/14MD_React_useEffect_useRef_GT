@@ -6,9 +6,7 @@ export const TaskFour = () => {
         console.log('First render.');
     }, []);
 
-    useEffect(() => {
-        console.log('Render.');
-    });
+    console.log('Render.');
 
     const [count, setCount] = useState(0);
 
@@ -18,7 +16,7 @@ export const TaskFour = () => {
         console.log('Changing count.');
     };
 
-    const handleChange = (event: any) => {
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setInputText(event.target.value);
         // console.log('Render.');
         console.log('Input change.');
